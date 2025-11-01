@@ -207,26 +207,38 @@ export function getTranslation(lang: Language) {
   return translations[lang];
 }
 
-export function translate(key: string, lang: Language, params?: Record<string, string>): string {
-  const keys = key.split('.');
-  let value: any = translations[lang];
-  
+export function translate(
+  key: string,
+  lang: Language,
+  params?: Record<string, string>
+): string {
+  const keys = key.split(".");
+
+  // walk the object in a type-safe way using `unknown`
+  let current: unknown = translations[lang];
   for (const k of keys) {
-    value = value?.[k];
+    const obj = current as Record<string, unknown> | undefined;
+    current = obj ? obj[k] : undefined;
   }
-  
-  if (typeof value !== 'string') {
-    // Fallback to English if translation is missing
-    value = translations.en;
+
+  // fallback to English if not a string
+  if (typeof current !== "string") {
+    current = translations.en;
     for (const k of keys) {
-      value = value?.[k];
+      const obj = current as Record<string, unknown> | undefined;
+      current = obj ? obj[k] : undefined;
     }
   }
-  
-  if (params) {
-    return value.replace(/\{(\w+)\}/g, (match, key) => params[key] || match);
-  }
-  
-  return value || key;
-}
 
+  // final value
+  const str: string = typeof current === "string" ? current : key;
+
+  // interpolate {placeholders}
+  if (params) {
+    return str.replace(/\{(\w+)\}/g, (_match: string, k: string): string => {
+      return params[k] ?? _match;
+    });
+  }
+
+  return str;
+}
