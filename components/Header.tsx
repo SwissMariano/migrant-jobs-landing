@@ -1,9 +1,12 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <header className="mx-auto max-w-6xl px-4 py-4 sm:py-6">
@@ -15,10 +18,11 @@ export default function Header() {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-6">
-          <a href="#how" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">How it works</a>
-          <a href="#for-employers" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">For employers</a>
-          <a href="#faq" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">FAQ</a>
-          <a href="/privacy" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">Privacy</a>
+          <a href="#how" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.howItWorks")}</a>
+          <a href="#for-employers" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.forEmployers")}</a>
+          <a href="#faq" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.faq")}</a>
+          <a href="/privacy" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.privacy")}</a>
+          <LanguageSwitcher />
         </nav>
 
         {/* Mobile Menu Button */}
@@ -60,29 +64,32 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
-            How it works
+            {t("header.howItWorks")}
           </a>
           <a
             href="#for-employers"
             onClick={() => setIsMenuOpen(false)}
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
-            For employers
+            {t("header.forEmployers")}
           </a>
           <a
             href="#faq"
             onClick={() => setIsMenuOpen(false)}
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
-            FAQ
+            {t("header.faq")}
           </a>
           <a
             href="/privacy"
             onClick={() => setIsMenuOpen(false)}
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
-            Privacy
+            {t("header.privacy")}
           </a>
+          <div className="pt-2">
+            <LanguageSwitcher />
+          </div>
         </nav>
       )}
     </header>
