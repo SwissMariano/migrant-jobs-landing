@@ -8,27 +8,27 @@ export default function Home() {
       <Header />
 
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-4 py-16 grid gap-8 md:grid-cols-2 items-center">
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+      <section className="mx-auto max-w-6xl px-4 py-8 sm:py-12 md:py-16 grid gap-6 md:gap-8 md:grid-cols-2 items-center">
+        <div className="order-2 md:order-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Jobs for migrants, faster.
           </h1>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-base sm:text-lg">
             We connect migrants with fair, verified jobs and community support in your area.
           </p>
           <a
             href="#waitlist"
-            className="inline-block mt-6 rounded bg-black text-white px-6 py-3 font-medium focus:outline-none focus:ring"
+            className="inline-block mt-6 rounded bg-black text-white px-6 py-3 text-sm sm:text-base font-medium focus:outline-none focus:ring"
           >
             Get early access
           </a>
-          <p className="mt-3 text-sm text-gray-600">
-            Free to join. We’ll email you when we launch.
+          <p className="mt-3 text-xs sm:text-sm text-gray-600">
+            Free to join. We'll email you when we launch.
           </p>
         </div>
 
         {/* ← Ici on affiche la photo (public/hero.jpg) */}
-        <div className="rounded-lg overflow-hidden border">
+        <div className="rounded-lg overflow-hidden border order-1 md:order-2">
           <Image
             src="/hero.jpg.jpeg"
             alt="Founder smiling at sunset"
@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section id="how" className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-16 grid gap-8 md:grid-cols-3">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 grid gap-6 sm:gap-8 md:grid-cols-3">
           {[
             { title: "Create your profile", desc: "Tell us your skills, languages, and availability." },
             { title: "Get matched", desc: "We connect you with verified employers and NGOs." },
@@ -57,21 +57,21 @@ export default function Home() {
       </section>
 
       {/* EMPLOYERS */}
-      <section id="for-employers" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-2xl font-bold">For employers & NGOs</h2>
-        <p className="mt-2 text-gray-700">
+      <section id="for-employers" className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        <h2 className="text-xl sm:text-2xl font-bold">For employers & NGOs</h2>
+        <p className="mt-2 text-sm sm:text-base text-gray-700">
           Access a screened talent pool, language support, and simple posting tools.
         </p>
-        <a href="#waitlist" className="mt-4 inline-block rounded border px-4 py-2 focus:outline-none focus:ring">
+        <a href="#waitlist" className="mt-4 inline-block rounded border px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring">
           Join partner list
         </a>
       </section>
 
       {/* WAITLIST FORM */}
       <section id="waitlist" className="bg-gray-50">
-        <div className="mx-auto max-w-3xl px-4 py-16">
-          <h2 className="text-2xl font-bold">Join the waitlist</h2>
-          <p className="mt-2 text-gray-700">We’ll notify you when we launch in your city.</p>
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:py-16">
+          <h2 className="text-xl sm:text-2xl font-bold">Join the waitlist</h2>
+          <p className="mt-2 text-sm sm:text-base text-gray-700">We'll notify you when we launch in your city.</p>
           <form
             action="https://formspree.io/f/YOUR_FORM_ID"  // ← remplace par ton endpoint Formspree
             method="POST"
