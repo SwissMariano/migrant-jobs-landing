@@ -74,6 +74,24 @@ export default function Home() {
         </a>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        <h2 className="text-xl sm:text-2xl font-bold">{t("faq.title")}</h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {[
+            { questionKey: "faq.question1", answerKey: "faq.answer1" },
+            { questionKey: "faq.question2", answerKey: "faq.answer2" },
+            { questionKey: "faq.question3", answerKey: "faq.answer3" },
+            { questionKey: "faq.question4", answerKey: "faq.answer4" },
+          ].map((item) => (
+            <div key={item.questionKey} className="rounded-lg border bg-white p-6">
+              <h3 className="text-base sm:text-lg font-semibold">{t(item.questionKey)}</h3>
+              <p className="mt-2 text-sm sm:text-base text-gray-700">{t(item.answerKey)}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* WAITLIST FORM */}
       <section id="waitlist" className="bg-gray-50">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:py-16">

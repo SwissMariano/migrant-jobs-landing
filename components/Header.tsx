@@ -12,8 +12,8 @@ export default function Header() {
     <header className="mx-auto max-w-6xl px-4 py-4 sm:py-6">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring">
-          <img src="/publiclogo.svg.png" alt="Dana Rey logo" className="h-8 w-8 sm:h-10 sm:w-10" />
-          <span className="font-semibold text-base sm:text-lg">Dana Rey</span>
+          <img src="/publiclogo.svg.png" alt="HelpPoints.ch by Dana Rey logo" className="h-8 w-8 sm:h-10 sm:w-10" />
+          <span className="font-semibold text-base sm:text-lg">HelpPoints.ch by Dana Rey</span>
         </Link>
         
         {/* Desktop Navigation */}
