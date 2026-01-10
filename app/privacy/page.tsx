@@ -7,7 +7,7 @@ const privacyTranslations = {
   en: {
     title: "Privacy Policy",
     lastUpdated: "Last updated:",
-    intro: "At Dana Rey, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform to connect with job opportunities and community support.",
+    intro: "At HelpPoints.ch by Dana Rey, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform to connect with job opportunities and community support.",
     backToHome: "← Back to home",
     sections: {
       introTitle: "1. Introduction",
@@ -78,7 +78,7 @@ const privacyTranslations = {
   de: {
     title: "Datenschutzerklärung",
     lastUpdated: "Zuletzt aktualisiert:",
-    intro: "Bei Dana Rey sind wir dem Schutz Ihrer Privatsphäre verpflichtet. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Plattform nutzen, um sich mit Arbeitsmöglichkeiten und Gemeinschaftsunterstützung zu verbinden.",
+    intro: "Bei HelpPoints.ch by Dana Rey sind wir dem Schutz Ihrer Privatsphäre verpflichtet. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Plattform nutzen, um sich mit Arbeitsmöglichkeiten und Gemeinschaftsunterstützung zu verbinden.",
     backToHome: "← Zurück zur Startseite",
     sections: {
       introTitle: "1. Einführung",
@@ -149,7 +149,7 @@ const privacyTranslations = {
   fr: {
     title: "Politique de confidentialité",
     lastUpdated: "Dernière mise à jour :",
-    intro: "Chez Dana Rey, nous nous engageons à protéger votre vie privée. Cette Politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme pour vous connecter à des opportunités d'emploi et à un soutien communautaire.",
+    intro: "Chez HelpPoints.ch by Dana Rey, nous nous engageons à protéger votre vie privée. Cette Politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme pour vous connecter à des opportunités d'emploi et à un soutien communautaire.",
     backToHome: "← Retour à l'accueil",
     sections: {
       introTitle: "1. Introduction",
@@ -220,7 +220,7 @@ const privacyTranslations = {
   uk: {
     title: "Політика конфіденційності",
     lastUpdated: "Останнє оновлення:",
-    intro: "У Dana Rey ми зобов'язуємося захищати вашу конфіденційність. Ця Політика конфіденційності пояснює, як ми збираємо, використовуємо, розкриваємо та захищаємо вашу інформацію, коли ви використовуєте нашу платформу для зв'язку з можливостями працевлаштування та підтримкою спільноти.",
+    intro: "У HelpPoints.ch by Dana Rey ми зобов'язуємося захищати вашу конфіденційність. Ця Політика конфіденційності пояснює, як ми збираємо, використовуємо, розкриваємо та захищаємо вашу інформацію, коли ви використовуєте нашу платформу для зв'язку з можливостями працевлаштування та підтримкою спільноти.",
     backToHome: "← Повернутися на головну",
     sections: {
       introTitle: "1. Вступ",
@@ -291,7 +291,7 @@ const privacyTranslations = {
   "pt-BR": {
     title: "Política de Privacidade",
     lastUpdated: "Última atualização:",
-    intro: "Na Dana Rey, temos o compromisso de proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você usa nossa plataforma para se conectar a oportunidades de trabalho e apoio comunitário.",
+    intro: "Na HelpPoints.ch by Dana Rey, temos o compromisso de proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você usa nossa plataforma para se conectar a oportunidades de trabalho e apoio comunitário.",
     backToHome: "← Voltar para a página inicial",
     sections: {
       introTitle: "1. Introdução",

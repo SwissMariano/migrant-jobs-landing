@@ -12,14 +12,13 @@ export default function Header() {
     <header className="mx-auto max-w-6xl px-4 py-4 sm:py-6">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring">
-          <img src="/publiclogo.svg.png" alt="Dana Rey logo" className="h-8 w-8 sm:h-10 sm:w-10" />
-          <span className="font-semibold text-base sm:text-lg">Dana Rey</span>
+          <img src="/publiclogo.svg.png" alt="HelpPoints.ch by Dana Rey logo" className="h-8 w-8 sm:h-10 sm:w-10" />
+          <span className="font-semibold text-base sm:text-lg">HelpPoints.ch by Dana Rey</span>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-6">
           <a href="#how" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.howItWorks")}</a>
-          <a href="#for-employers" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.forEmployers")}</a>
           <a href="#faq" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.faq")}</a>
           <a href="/privacy" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.privacy")}</a>
           <LanguageSwitcher />
@@ -65,13 +64,6 @@ export default function Header() {
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
             {t("header.howItWorks")}
-          </a>
-          <a
-            href="#for-employers"
-            onClick={() => setIsMenuOpen(false)}
-            className="text-base py-2 hover:underline focus:outline-none focus:ring"
-          >
-            {t("header.forEmployers")}
           </a>
           <a
             href="#faq"
