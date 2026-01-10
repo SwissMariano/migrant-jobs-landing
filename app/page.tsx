@@ -99,6 +99,7 @@ export default function Home() {
                 <option>Deutsch</option>
                 <option>Français</option>
                 <option>العربية</option>
+                <option>Português (Brasil)</option>
               </select>
             </label>
             <label className="inline-flex items-center gap-2">

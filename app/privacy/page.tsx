@@ -288,6 +288,77 @@ const privacyTranslations = {
       rights6: "Відкликання згоди на обробку даних у будь-який час",
     },
   },
+  "pt-BR": {
+    title: "Política de Privacidade",
+    lastUpdated: "Última atualização:",
+    intro: "Na Dana Rey, temos o compromisso de proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você usa nossa plataforma para se conectar a oportunidades de trabalho e apoio comunitário.",
+    backToHome: "← Voltar para a página inicial",
+    sections: {
+      introTitle: "1. Introdução",
+      collectTitle: "2. Informações que coletamos",
+      collectPersonal: "Informações pessoais",
+      collectAuto: "Informações coletadas automaticamente",
+      useTitle: "3. Como usamos suas informações",
+      sharingTitle: "4. Compartilhamento e divulgação de dados",
+      sharingIntro: "Não vendemos suas informações pessoais. Podemos compartilhar suas informações apenas nas seguintes circunstâncias:",
+      sharingEmployers: "Com empregadores e ONGs:",
+      sharingProviders: "Prestadores de serviços:",
+      sharingLegal: "Exigências legais:",
+      sharingTransfer: "Transferências comerciais:",
+      securityTitle: "5. Segurança de dados",
+      securityText: "Implementamos medidas técnicas e organizacionais adequadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela internet é 100% seguro, e não podemos garantir segurança absoluta.",
+      rightsTitle: "6. Seus direitos (GDPR e direitos de privacidade)",
+      rightsIntro: "Dependendo da sua localização, você pode ter os seguintes direitos:",
+      rightsAccess: "Acesso:",
+      rightsCorrection: "Correção:",
+      rightsDeletion: "Exclusão:",
+      rightsPortability: "Portabilidade de dados:",
+      rightsObjection: "Objeção:",
+      rightsWithdraw: "Retirar consentimento:",
+      rightsContact: "Para exercer esses direitos, entre em contato conosco em",
+      cookiesTitle: "7. Cookies e análises",
+      cookiesText: "Usamos cookies e tecnologias semelhantes para analisar padrões de uso e melhorar nossa plataforma. Usamos o Vercel Analytics, que respeita a privacidade e não requer cookies. Você pode controlar cookies nas configurações do seu navegador.",
+      retentionTitle: "8. Retenção de dados",
+      retentionText: "Mantemos suas informações pessoais apenas pelo tempo necessário para cumprir os objetivos descritos nesta política, a menos que um período de retenção mais longo seja exigido por lei. Quando você exclui sua conta ou solicita exclusão, removeremos suas informações pessoais, sujeito às exigências legais de retenção.",
+      childrenTitle: "9. Privacidade de crianças",
+      childrenText: "Nossa plataforma não é destinada a pessoas menores de 18 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que coletamos informações de uma criança, entre em contato conosco imediatamente.",
+      transfersTitle: "10. Transferências internacionais de dados",
+      transfersText: "Suas informações podem ser transferidas e processadas em países diferentes do seu país de residência. Garantimos que existam salvaguardas adequadas para proteger seus dados de acordo com esta Política de Privacidade.",
+      changesTitle: "11. Alterações nesta Política de Privacidade",
+      changesText: "Podemos atualizar esta Política de Privacidade periodicamente. Informaremos sobre alterações relevantes publicando a nova política nesta página e atualizando a data de \"Última atualização\". O uso contínuo da nossa plataforma após essas alterações constitui aceitação da política atualizada.",
+      contactTitle: "12. Fale conosco",
+      contactIntro: "Se você tiver dúvidas, preocupações ou solicitações sobre esta Política de Privacidade ou nossas práticas de dados, entre em contato conosco:",
+      contactEmail: "E-mail:",
+      contactGeneral: "Contato geral:",
+    },
+    listItems: {
+      personal1: "Nome e informações de contato (e-mail, telefone)",
+      personal2: "Preferências de idioma",
+      personal3: "Habilidades, experiência profissional e disponibilidade",
+      personal4: "Informações de localização (cidade, país)",
+      personal5: "Informações de perfil que você escolher fornecer",
+      auto1: "Informações do dispositivo e tipo de navegador",
+      auto2: "Endereço IP e localização geral",
+      auto3: "Dados de uso e interações com nossa plataforma",
+      auto4: "Cookies e tecnologias de rastreamento semelhantes",
+      use1: "Conectar você a oportunidades de emprego e empregadores relevantes",
+      use2: "Conectar você a ONGs e serviços de apoio comunitário",
+      use3: "Comunicar-se com você sobre oportunidades e atualizações da plataforma",
+      use4: "Melhorar nossos serviços e a experiência do usuário",
+      use5: "Cumprir obrigações legais e proteger nossos direitos",
+      use6: "Enviar atualizações (com seu consentimento) por e-mail ou WhatsApp",
+      sharing1: "Para facilitar a combinação de empregos e conexões de apoio (somente com seu consentimento)",
+      sharing2: "Com serviços terceirizados confiáveis que ajudam a operar nossa plataforma (por exemplo, hospedagem, análises)",
+      sharing3: "Quando exigido por lei ou para proteger nossos direitos e segurança",
+      sharing4: "Em conexão com uma fusão, aquisição ou venda de ativos (com aviso aos usuários)",
+      rights1: "Solicitar uma cópia das informações pessoais que temos sobre você",
+      rights2: "Solicitar correção de informações imprecisas ou incompletas",
+      rights3: "Solicitar exclusão das suas informações pessoais",
+      rights4: "Solicitar transferência dos seus dados para outro serviço",
+      rights5: "Objetar a determinados tipos de processamento",
+      rights6: "Retirar o consentimento para o processamento de dados a qualquer momento",
+    },
+  },
 };
 
 export default function PrivacyPage() {
@@ -300,7 +371,21 @@ export default function PrivacyPage() {
       
       <div className="mx-auto max-w-4xl px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">{privacyT.title}</h1>
-        <p className="text-gray-600 mb-8">{privacyT.lastUpdated} {new Date().toLocaleDateString(language === 'en' ? 'en-US' : language === 'de' ? 'de-DE' : language === 'fr' ? 'fr-FR' : 'uk-UA', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p className="text-gray-600 mb-8">
+          {privacyT.lastUpdated}{" "}
+          {new Date().toLocaleDateString(
+            language === "en"
+              ? "en-US"
+              : language === "de"
+              ? "de-DE"
+              : language === "fr"
+              ? "fr-FR"
+              : language === "pt-BR"
+              ? "pt-BR"
+              : "uk-UA",
+            { year: "numeric", month: "long", day: "numeric" }
+          )}
+        </p>
 
         <div className="prose prose-lg max-w-none space-y-8">
           <section>

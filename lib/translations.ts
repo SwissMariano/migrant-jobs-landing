@@ -1,4 +1,4 @@
-export type Language = 'en' | 'de' | 'fr' | 'uk';
+export type Language = 'en' | 'de' | 'fr' | 'uk' | 'pt-BR';
 
 export const translations = {
   en: {
@@ -43,6 +43,11 @@ export const translations = {
       whatsapp: 'Contact me via WhatsApp',
       submit: 'Join',
       privacy: 'We respect your privacy. Your data will be stored securely and can be deleted on request.',
+    },
+    cookieBanner: {
+      message: 'We use basic analytics to improve this site. By clicking “Accept”, you agree to storing a cookie for analytics.',
+      accept: 'Accept',
+      decline: 'Decline',
     },
     footer: {
       copyright: '© {year} Dana Rey',
@@ -94,6 +99,11 @@ export const translations = {
       submit: 'Beitreten',
       privacy: 'Wir respektieren Ihre Privatsphäre. Ihre Daten werden sicher gespeichert und können auf Anfrage gelöscht werden.',
     },
+    cookieBanner: {
+      message: 'Wir verwenden einfache Analysen, um diese Seite zu verbessern. Durch Klicken auf „Akzeptieren“ stimmen Sie der Speicherung eines Cookies für Analysen zu.',
+      accept: 'Akzeptieren',
+      decline: 'Ablehnen',
+    },
     footer: {
       copyright: '© {year} Dana Rey',
       privacy: 'Datenschutz',
@@ -143,6 +153,11 @@ export const translations = {
       whatsapp: 'Me contacter via WhatsApp',
       submit: 'Rejoindre',
       privacy: 'Nous respectons votre vie privée. Vos données seront stockées en toute sécurité et peuvent être supprimées sur demande.',
+    },
+    cookieBanner: {
+      message: 'Nous utilisons des analyses simples pour améliorer ce site. En cliquant sur « Accepter », vous acceptez le stockage d’un cookie à des fins d’analyse.',
+      accept: 'Accepter',
+      decline: 'Refuser',
     },
     footer: {
       copyright: '© {year} Dana Rey',
@@ -194,11 +209,71 @@ export const translations = {
       submit: 'Приєднатися',
       privacy: 'Ми поважаємо вашу конфіденційність. Ваші дані будуть безпечно зберігатися та можуть бути видалені на запит.',
     },
+    cookieBanner: {
+      message: 'Ми використовуємо базову аналітику, щоб покращити цей сайт. Натискаючи «Прийняти», ви погоджуєтеся на збереження файлів cookie для аналітики.',
+      accept: 'Прийняти',
+      decline: 'Відхилити',
+    },
     footer: {
       copyright: '© {year} Dana Rey',
       privacy: 'Конфіденційність',
       terms: 'Умови',
       contact: 'Контакт',
+    },
+  },
+  'pt-BR': {
+    header: {
+      howItWorks: 'Como funciona',
+      forEmployers: 'Para empregadores',
+      faq: 'Perguntas frequentes',
+      privacy: 'Privacidade',
+    },
+    hero: {
+      title: 'Empregos para migrantes, mais rápido.',
+      description: 'Conectamos migrantes a empregos justos e verificados e a apoio comunitário na sua região.',
+      cta: 'Receber acesso antecipado',
+      ctaSubtext: 'Grátis para participar. Enviaremos um e-mail quando lançarmos.',
+    },
+    howItWorks: {
+      title: 'Como funciona',
+      step1: {
+        title: 'Crie seu perfil',
+        description: 'Conte suas habilidades, idiomas e disponibilidade.',
+      },
+      step2: {
+        title: 'Receba combinações',
+        description: 'Conectamos você a empregadores e ONGs verificados.',
+      },
+      step3: {
+        title: 'Comece a trabalhar',
+        description: 'Entrevistas, integração e apoio em cada etapa.',
+      },
+    },
+    employers: {
+      title: 'Para empregadores e ONGs',
+      description: 'Acesse um banco de talentos verificado, suporte linguístico e ferramentas simples de publicação.',
+      cta: 'Entrar na lista de parceiros',
+    },
+    waitlist: {
+      title: 'Entre na lista de espera',
+      description: 'Avisaremos quando lançarmos na sua cidade.',
+      name: 'Nome',
+      email: 'E-mail',
+      language: 'Idioma preferido',
+      whatsapp: 'Quero ser contatado via WhatsApp',
+      submit: 'Entrar',
+      privacy: 'Respeitamos sua privacidade. Seus dados serão armazenados com segurança e podem ser excluídos mediante solicitação.',
+    },
+    cookieBanner: {
+      message: 'Usamos análises básicas para melhorar este site. Ao clicar em “Aceitar”, você concorda com o armazenamento de um cookie para análise.',
+      accept: 'Aceitar',
+      decline: 'Recusar',
+    },
+    footer: {
+      copyright: '© {year} Dana Rey',
+      privacy: 'Privacidade',
+      terms: 'Termos',
+      contact: 'Contato',
     },
   },
 } as const;

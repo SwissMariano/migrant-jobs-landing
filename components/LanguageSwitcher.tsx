@@ -7,6 +7,7 @@ const languages: { code: Language; name: string; flag: string }[] = [
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
   { code: "uk", name: "Українська", flag: "🇺🇦" },
+  { code: "pt-BR", name: "Português (Brasil)", flag: "🇧🇷" },
 ];
 
 export default function LanguageSwitcher() {
@@ -44,4 +45,3 @@ export default function LanguageSwitcher() {
     </div>
   );
 }
-

@@ -17,7 +17,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     // Load language from localStorage on mount
     if (typeof window !== "undefined") {
       const savedLang = localStorage.getItem("language") as Language;
-      if (savedLang && (savedLang === "en" || savedLang === "de" || savedLang === "fr" || savedLang === "uk")) {
+      if (
+        savedLang &&
+        (savedLang === "en" ||
+          savedLang === "de" ||
+          savedLang === "fr" ||
+          savedLang === "uk" ||
+          savedLang === "pt-BR")
+      ) {
         setLanguageState(savedLang);
       }
     }
@@ -70,4 +77,3 @@ export function useLanguage() {
   }
   return context;
 }
-
