@@ -19,6 +19,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-6">
           <a href="#how" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.howItWorks")}</a>
+          <a href="#for-employers" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.forEmployers")}</a>
           <a href="#faq" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.faq")}</a>
           <a href="/privacy" className="text-sm lg:text-base hover:underline focus:outline-none focus:ring">{t("header.privacy")}</a>
           <LanguageSwitcher />
@@ -64,6 +65,13 @@ export default function Header() {
             className="text-base py-2 hover:underline focus:outline-none focus:ring"
           >
             {t("header.howItWorks")}
+          </a>
+          <a
+            href="#for-employers"
+            onClick={() => setIsMenuOpen(false)}
+            className="text-base py-2 hover:underline focus:outline-none focus:ring"
+          >
+            {t("header.forEmployers")}
           </a>
           <a
             href="#faq"

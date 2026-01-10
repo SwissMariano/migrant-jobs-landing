@@ -4,6 +4,7 @@ export const translations = {
   en: {
     header: {
       howItWorks: 'How it works',
+      forEmployers: 'For employers',
       faq: 'FAQ',
       privacy: 'Privacy',
     },
@@ -27,6 +28,11 @@ export const translations = {
         title: 'Start working',
         description: 'Interviews, onboarding, and support along the way.',
       },
+    },
+    employers: {
+      title: 'For employers & NGOs',
+      description: 'Access a screened talent pool, language support, and simple posting tools.',
+      cta: 'Join partner list',
     },
     faq: {
       title: 'Frequently asked questions',
@@ -64,6 +70,7 @@ export const translations = {
   de: {
     header: {
       howItWorks: 'So funktioniert es',
+      forEmployers: 'Für Arbeitgeber',
       faq: 'FAQ',
       privacy: 'Datenschutz',
     },
@@ -87,6 +94,11 @@ export const translations = {
         title: 'Arbeit beginnen',
         description: 'Vorstellungsgespräche, Einarbeitung und Unterstützung auf dem Weg.',
       },
+    },
+    employers: {
+      title: 'Für Arbeitgeber & NGOs',
+      description: 'Zugang zu einem geprüften Talentpool, Sprachunterstützung und einfachen Veröffentlichungstools.',
+      cta: 'Partnerliste beitreten',
     },
     faq: {
       title: 'Häufige Fragen',
@@ -124,6 +136,7 @@ export const translations = {
   fr: {
     header: {
       howItWorks: 'Comment ça marche',
+      forEmployers: 'Pour les employeurs',
       faq: 'FAQ',
       privacy: 'Confidentialité',
     },
@@ -147,6 +160,11 @@ export const translations = {
         title: 'Commencer à travailler',
         description: 'Entretiens, intégration et soutien tout au long du chemin.',
       },
+    },
+    employers: {
+      title: 'Pour les employeurs et ONG',
+      description: 'Accédez à un vivier de talents vérifiés, au soutien linguistique et à des outils de publication simples.',
+      cta: 'Rejoindre la liste des partenaires',
     },
     faq: {
       title: 'Questions fréquentes',
@@ -184,6 +202,7 @@ export const translations = {
   uk: {
     header: {
       howItWorks: 'Як це працює',
+      forEmployers: 'Для роботодавців',
       faq: 'FAQ',
       privacy: 'Конфіденційність',
     },
@@ -207,6 +226,11 @@ export const translations = {
         title: 'Почати працювати',
         description: 'Співбесіди, адаптація та підтримка на шляху.',
       },
+    },
+    employers: {
+      title: 'Для роботодавців та НГО',
+      description: 'Доступ до перевіреного пулу талантів, мовної підтримки та простих інструментів розміщення.',
+      cta: 'Приєднатися до списку партнерів',
     },
     faq: {
       title: 'Поширені запитання',
@@ -244,6 +268,7 @@ export const translations = {
   'pt-BR': {
     header: {
       howItWorks: 'Como funciona',
+      forEmployers: 'Para empregadores',
       faq: 'Perguntas frequentes',
       privacy: 'Privacidade',
     },
@@ -267,6 +292,11 @@ export const translations = {
         title: 'Comece a trabalhar',
         description: 'Entrevistas, integração e apoio em cada etapa.',
       },
+    },
+    employers: {
+      title: 'Para empregadores e ONGs',
+      description: 'Acesse um banco de talentos verificado, suporte linguístico e ferramentas simples de publicação.',
+      cta: 'Entrar na lista de parceiros',
     },
     faq: {
       title: 'Perguntas frequentes',

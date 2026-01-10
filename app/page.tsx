@@ -63,6 +63,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EMPLOYERS */}
+      <section id="for-employers" className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        <h2 className="text-xl sm:text-2xl font-bold">{t("employers.title")}</h2>
+        <p className="mt-2 text-sm sm:text-base text-gray-700">
+          {t("employers.description")}
+        </p>
+        <a href="#waitlist" className="mt-4 inline-block rounded border px-4 py-2 text-sm sm:text-base focus:outline-none focus:ring">
+          {t("employers.cta")}
+        </a>
+      </section>
+
       {/* FAQ */}
       <section id="faq" className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
         <h2 className="text-xl sm:text-2xl font-bold">{t("faq.title")}</h2>
