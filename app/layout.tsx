@@ -9,11 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.example.com"), // ← mets ton domaine après le déploiement
-  title: "HelpPoints.ch by Dana Rey — Jobs for migrants, faster",
-  description: "We connect migrants with fair, verified jobs and community support.",
+  title: "HelpPoints.ch by Dana Rey — Integration support for migrants, faster",
+  description:
+    "We connect migrants with trusted opportunities for work, community events, and local support.",
   openGraph: {
-    title: "HelpPoints.ch by Dana Rey — Jobs for migrants, faster",
-    description: "We connect migrants with fair, verified jobs and community support.",
+    title: "HelpPoints.ch by Dana Rey — Integration support for migrants, faster",
+    description:
+      "We connect migrants with trusted opportunities for work, community events, and local support.",
     url: "https://www.example.com",
     siteName: "HelpPoints.ch by Dana Rey",
     images: [{ url: "/publicog-image.png.png", width: 1200, height: 630 }],
@@ -22,8 +24,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HelpPoints.ch by Dana Rey — Jobs for migrants, faster",
-    description: "We connect migrants with fair, verified jobs and community support.",
+    title: "HelpPoints.ch by Dana Rey — Integration support for migrants, faster",
+    description:
+      "We connect migrants with trusted opportunities for work, community events, and local support.",
     images: ["/publicog-image.png.png"],
   },
   alternates: { canonical: "/" },
