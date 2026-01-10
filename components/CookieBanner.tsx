@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  const { t } = useLanguage();
   
   useEffect(() => {
     // Only check localStorage on the client side
@@ -19,7 +21,7 @@ export default function CookieBanner() {
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-w-xl rounded border bg-white p-4 shadow">
       <p className="text-sm text-gray-800">
-        We use basic analytics to improve this site. By clicking “Accept”, you agree to storing a cookie for analytics.
+        {t("cookieBanner.message")}
       </p>
       <div className="mt-3 flex gap-2">
         <button
@@ -31,7 +33,7 @@ export default function CookieBanner() {
             setVisible(false);
           }}
         >
-          Accept
+          {t("cookieBanner.accept")}
         </button>
         <button
           className="rounded border px-4 py-2 text-sm focus:outline-none focus:ring"
@@ -42,7 +44,7 @@ export default function CookieBanner() {
             setVisible(false);
           }}
         >
-          Decline
+          {t("cookieBanner.decline")}
         </button>
       </div>
     </div>
